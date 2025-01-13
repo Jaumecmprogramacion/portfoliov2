@@ -208,7 +208,10 @@ const Home = () => {
                   {SOCIAL_LINKS.map((social, index) => (
                     <SocialLink key={index} {...social} />
                   ))}
-                  <CTAButton href="mailto:jaumecrespo@jaumecrespo.com" text="Jaumecrespo@jaumecrespo.com" icon={Mail} />
+                  <CTAButton  id="copiarmail" text="Jaumecrespo@jaumecrespo.com" icon={Mail} />
+        
+    
+  
                 </div>
               </div>
             </div>
