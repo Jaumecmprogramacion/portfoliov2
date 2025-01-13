@@ -130,7 +130,7 @@ const ContactPage = () => {
           >
            
 
-            <form 
+           <form 
               action="https://formsubmit.co/jaumecrespo@jaumecrespo.com"
               method="POST"
               onSubmit={handleSubmit}
