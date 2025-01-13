@@ -1,4 +1,7 @@
 # Portofolio V5
+npm install --legacy-peer-deps
+npm run dev
+
 Halo semuanya!
 Perkenalkan, saya Eki Zulfar Rachman, dan pada kesempatan kali ini, saya ingin berbagi proyek website portofolio yang telah saya kembangkan.
 

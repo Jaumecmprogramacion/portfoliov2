@@ -99,20 +99,21 @@ function a11yProps(index) {
     "aria-controls": `full-width-tabpanel-${index}`,
   };
 }
-
+// Aqui vamos añadiendo las habilidades
 const techStacks = [
   { icon: "html.svg", language: "HTML" },
   { icon: "css.svg", language: "CSS" },
   { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
+  { icon: "sql.svg", language: "SQL" },
+  { icon: "logo-github.svg", language: "Github" },
+  { icon: "oraclered.svg", language: "Oracle" },
+  { icon: "phpmyadmin.svg", language: "PhpMyadmin" },
+  { icon: "php.svg", language: "PHP" },
+  { icon: "mongo.svg", language: "MongoDB" },
   { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "sqlserver.svg", language: "SQL SERVER" },
+  { icon: "logo-python.svg", language: "Python" },
+  
 ];
 
 export default function FullWidthTabs() {
@@ -192,12 +193,12 @@ export default function FullWidthTabs() {
             backgroundClip: 'text',
             WebkitTextFillColor: 'transparent'
           }}>
-            Portfolio Showcase
+            Portfolio 
           </span>
         </h2>
         <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">
-          Explore my journey through projects, certifications, and technical expertise. 
-          Each section represents a milestone in my continuous learning path.
+        Descubre mi camino de crecimiento a través de proyectos, certificaciones y habilidades técnicas.
+        Cada sección refleja un hito importante en mi búsqueda continua de aprendizaje e innovación.
         </p>
       </div>
 
@@ -273,17 +274,17 @@ export default function FullWidthTabs() {
           >
             <Tab
               icon={<Code className="mb-2 w-5 h-5 transition-all duration-300" />}
-              label="Projects"
+              label="Projectos"
               {...a11yProps(0)}
             />
             <Tab
               icon={<Award className="mb-2 w-5 h-5 transition-all duration-300" />}
-              label="Certificates"
+              label="Certificados"
               {...a11yProps(1)}
             />
             <Tab
               icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
-              label="Tech Stack"
+              label="Habilidades"
               {...a11yProps(2)}
             />
           </Tabs>

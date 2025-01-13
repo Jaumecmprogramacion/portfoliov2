@@ -81,57 +81,57 @@ const ContactPage = () => {
   return (
     <>
       <div className="text-center lg:mt-[5%] mt-10 mb-2 sm:px-0 px-[5%]">
-        <h2
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
-        >
-          <span
-            style={{
-              color: "#6366f1",
-              backgroundImage:
-                "linear-gradient(45deg, #6366f1 10%, #a855f7 93%)",
-              WebkitBackgroundClip: "text",
-              backgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            Contact Me
-          </span>
-        </h2>
-        <p
-          data-aos="fade-up"
-          data-aos-duration="1100"
-          className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2"
-        >
-          Got a question? Send me a message, and I'll get back to you soon.
-        </p>
-      </div>
+  <h2
+    data-aos="fade-down"
+    data-aos-duration="1000"
+    className="inline-block text-3xl md:text-5xl font-bold text-center mx-auto text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]"
+  >
+    <span
+      style={{
+        color: "#6366f1",
+        backgroundImage: "linear-gradient(45deg, #6366f1 10%, #a855f7 93%)",
+        WebkitBackgroundClip: "text",
+        backgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}
+    >
+      Contactame
+    </span>
+  </h2>
+  <p
+    data-aos="fade-up"
+    data-aos-duration="1100"
+    className="text-slate-400 max-w-2x1 mx-auto text-sm md:text-base mt-2"
+  >
+    ¿Alguna pregunta? Usa el formulario o escribe a{" "}
+    <span
+      onClick={() => {
+        navigator.clipboard.writeText("jaumecrespo@jaumecrespo.com");
+        alert("Correo copiado al portapapeles!");
+      }}
+      className="text-[#6366f1] font-medium underline cursor-pointer hover:text-[#a855f7] transition-colors duration-300"
+    >
+      jaumecrespo@jaumecrespo.com
+    </span>
+    , estaré encantado de hablar contigo.
+  </p>
+</div>
+
 
       <div
         className="h-auto py-10 flex items-center justify-center px-[5%] md:px-0"
         id="Contact"
       >
-        <div className="container px-[1%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[45%_55%] 2xl:grid-cols-[35%_65%] gap-12">
+        <div className="container px-[1%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[05%_55%] xl:grid-cols-[100%_65%] gap-12">
           <div
             data-aos="fade-right"
             data-aos-duration="1200"
             className="bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl p-5 py-10 sm:p-10 transform transition-all duration-300 hover:shadow-[#6366f1]/10"
           >
-            <div className="flex justify-between items-start mb-8">
-              <div>
-                <h2 className="text-4xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-                  Get in Touch
-                </h2>
-                <p className="text-gray-400">
-                  Have something to discuss? Send me a message and let's talk.
-                </p>
-              </div>
-              <Share2 className="w-10 h-10 text-[#6366f1] opacity-50" />
-            </div>
+           
 
             <form 
-              action="https://formsubmit.co/ekizulfarrachman@gmail.com"
+              action="https://formsubmit.co/jaumecrespo@jaumecrespo.com"
               method="POST"
               onSubmit={handleSubmit}
               className="space-y-6"
@@ -149,7 +149,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="Tu nombre"
                   value={formData.name}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -166,7 +166,7 @@ const ContactPage = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Tu email"
                   value={formData.email}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -182,7 +182,7 @@ const ContactPage = () => {
                 <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-gray-400 group-focus-within:text-[#6366f1] transition-colors" />
                 <textarea
                   name="message"
-                  placeholder="Your Message"
+                  placeholder="Tu mensaje"
                   value={formData.message}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -198,18 +198,14 @@ const ContactPage = () => {
                 className="w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#6366f1]/20 active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 <Send className="w-5 h-5" />
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
               </button>
             </form>
 
-            <div className="mt-10 pt-6 border-t border-white/10 flex justify-center space-x-6">
-              <SocialLinks />
-            </div>
+           
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-3 py-3 md:p-10 md:py-8 shadow-2xl transform transition-all duration-300 hover:shadow-[#6366f1]/10">
-            <Komentar />
-          </div>
+         
         </div>
       </div>
     </>
