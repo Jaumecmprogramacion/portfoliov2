@@ -8,6 +8,10 @@ Ejecutar proyecto:
 
 npm run dev
 
+Compilar proyecto:
+
+npm run build
+
 Portfolio extraido de  https://www.eki.my.id/ 
 Github: https://github.com/EkiZR/Portofolio_V5
 
