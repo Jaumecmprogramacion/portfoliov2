@@ -160,7 +160,7 @@ const AboutPage = () => {
       icon: Code,
       color: "from-[#6366f1] to-[#a855f7]",
       value: totalProjects,
-      label: "Total Projectos",
+      label: "Total Proyectos",
       description: "Usando diversas tecnologías de desarrollo de software.",
       animation: "fade-right",
     },
@@ -221,7 +221,7 @@ const AboutPage = () => {
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="/public/cv/mi_cv.pdf" className="w-full lg:w-auto">
+              <a href="cv/mi_cv.pdf" className="w-full lg:w-auto">
               <button 
                 data-aos="fade-up"
                 data-aos-duration="800"

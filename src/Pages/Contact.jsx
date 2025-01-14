@@ -122,7 +122,7 @@ const ContactPage = () => {
         className="h-auto py-10 flex items-center justify-center px-[5%] md:px-0"
         id="Contact"
       >
-        <div className="container px-[1%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[05%_55%] xl:grid-cols-[100%_65%] gap-12">
+        <div className="container px-[18%] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[05%_55%] xl:grid-cols-[100%_65%] gap-12">
           <div
             data-aos="fade-right"
             data-aos-duration="1200"

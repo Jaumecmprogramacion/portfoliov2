@@ -192,11 +192,12 @@ const Home = () => {
                   {TECH_STACK.map((tech, index) => (
                     <TechStack key={index} tech={tech} />
                   ))}
+                  
                 </div>
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
-                  <CTAButton href="#Portofolio" text="Projectos" icon={ExternalLink} />
+                  <CTAButton href="#Portofolio" text="Proyectos" icon={ExternalLink} /> 
                   <CTAButton href="#Contact" text="Contacto" icon={Mail} />
                   
                  
@@ -209,6 +210,7 @@ const Home = () => {
                     <SocialLink key={index} {...social} />
                   ))}
                   <CTAButton  id="copiarmail" text="Jaumecrespo@jaumecrespo.com" icon={Mail} />
+                   
         
     
   
